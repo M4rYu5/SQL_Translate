@@ -1,62 +1,16 @@
-﻿create procedure getImg @pathImage nvarchar(255)
-AS
-	declare	
-		@pathFolder nvarchar(255)=N'C:\Users\intern\Source\GitHub\SQL_Translate\SQL_Scripts\Images',
-		@sql nvarchar(255);
-		set @sql=N'SELECT BulkColumn FROM Openrowset( Bulk '''+@pathFolder+@pathImage+''', Single_Blob) as img'
-exec sp_executesql @sql;
-go
-
-
----------------------------------------------------------------------------------------
+﻿---------------------------------------------------------------------------------------
 --		Initializare
 use Northwind;
 go
 
----------------------------------------------------------------------------------------
---		dbo.Categories
-
-alter table Categories
-alter column CategoryName nvarchar(29);
-go
-
-update Categories
-set CategoryName = 'Bauturi', Description = 'Apa, Sucuri, si Bauturi alcoolice'
-where CategoryName = 'Beverages';
-
-update Categories
-set CategoryName = 'Condimente', Description = 'Piper, zahar, sosuri, si alte condimente'
-where CategoryName = 'Condiments';
-
-update Categories
-set CategoryName = 'Panificatie', Description = 'Desert, dulciuri, si prajituri'
-where CategoryName = 'Confections';
-
-update Categories
-set CategoryName = 'Produse Lactate', Description = 'Lapte, branza, iaurt, si alte produse lactate'
-where CategoryName = 'Dairy Products';
-
-update Categories
-set CategoryName = 'Cereale si Produse din cerele', Description = 'Produse de patiserie, cipsuri, biscuiti, paste, si cereale'
-where CategoryName like 'Grains%' and CategoryName like '%Cereals';
-
-update Categories
-set CategoryName = 'Carne si produse din carne', Description = 'Produse proaspete din carne'
-where CategoryName like 'Meat%' and CategoryName like '%Poultry';
-
-update Categories
-set CategoryName = 'Fructe si Legume', Description = 'Fructe si legume proaspete'
-where CategoryName = 'Produce';
-
-update Categories
-set CategoryName = 'Fructe de mare', Description = 'Alge si fructe de mare'
-where CategoryName = 'Seafood';
-go
---CustomerCustomerDemo, CustomerDemographics <- on change needed
----------------------------------------------------------------------------------------
---		Customers
-
---todo: din cate vad sunt din tari diferite, deci pot fi lasati/schimbati cu altii/stersi din admin pannel
+--create procedure getImg @pathImage nvarchar(255)
+--AS
+--	declare	
+--		@pathFolder nvarchar(255)=N'C:\Users\M4rYu5\Documents\GitHub\SQL_Translate\SQL_Scripts\Images',
+--		@sql nvarchar(255);
+--		set @sql=N'SELECT BulkColumn FROM Openrowset( Bulk '''+@pathFolder+@pathImage+''', Single_Blob) as img'
+--exec sp_executesql @sql;
+--go
 
 ---------------------------------------------------------------------------------------
 --		Employees
@@ -76,7 +30,7 @@ Set LastName = 'Danciu',
 	PostalCode = '050082',
 	Country = 'Romania',
 	HomePhone = '0751292371',
-	Notes = 'Are o diploma de licenta in psihologie de la Universitatea de Stat din Colorado in 1970. Ea a completat, de asemenea, "Arta apelului rece". Nicoleta este membru al Toastmasters International.'
+	Notes = 'Are o diploma de licenta in psihologie de la Universitatea de Stat din Colorado in 1980. Ea a completat, de asemenea, "Arta apelului rece". Nicoleta este membru al Toastmasters International.'
 where LastName = 'Davolio';
 
 update Employees
@@ -89,7 +43,7 @@ Set LastName = 'Florea',
 	PostalCode = '031317',
 	Country = 'Romania',
 	HomePhone = '0753255371',
-	Notes = 'Andrei a primit diploma de tehnician superior in 1974 si un doctorat in marketing international de la Universitatea din Dallas in 1981. Este fluent in franceza si italiana si citeste limba germana. A intrat in companie ca reprezentant de vanzari, a fost promovat in functia de director de vanzari in ianuarie 1992 si vicepresedinte al vanzarilor in martie 1993. Andrew este membru al camerei de comert din Seattle.'
+	Notes = 'Andrei a primit diploma de tehnician superior in 1984 si un doctorat in marketing international de la Universitatea din Dallas in 1991. Este fluent in franceza si italiana si citeste limba germana. A intrat in companie ca reprezentant de vanzari, a fost promovat in functia de director de vanzari in ianuarie 2002 si vicepresedinte al vanzarilor in martie 2003. Andrew este membru al camerei de comert din Seattle.'
 where LastName = 'Fuller';
 
 update Employees
@@ -102,7 +56,7 @@ Set LastName = 'Leca',
 	PostalCode = '061158',
 	Country = 'Romania',
 	HomePhone = '0723292441',
-	Notes = 'Ioana are o diploma in chimie din Boston College (1984). A finalizat un program de certificare in domeniul managementul vanzarii cu amanuntul a produselor alimentare. Ioana a fost angajata ca vanzatoare in 1991 si a fost promovata pe postul reprezentant vanzari in februarie 1992.'
+	Notes = 'Ioana are o diploma in chimie din Boston College (1994). A finalizat un program de certificare in domeniul managementul vanzarii cu amanuntul a produselor alimentare. Ioana a fost angajata ca vanzatoare in 2001 si a fost promovata pe postul reprezentant vanzari in februarie 2002.'
 where LastName = 'Leverling';
 
 update Employees
@@ -115,7 +69,7 @@ Set LastName = 'Pescaru',
 	PostalCode = '031317',
 	Country = 'Romania',
 	HomePhone = '0752212371',
-	Notes = 'Margareta detine o diploma de licenta in literatura engleza de la Concordia College (1958) si o diploma de licenta de la Institutul American de Arta culinara (1966).'
+	Notes = 'Margareta detine o diploma de licenta in literatura engleza de la Concordia College (1978) si o diploma de licenta de la Institutul American de Arta culinara (1986).'
 where LastName = 'Peacock';
 
 update Employees
@@ -128,7 +82,7 @@ Set LastName = 'Bucurescu',
 	PostalCode = '062203',
 	Country = 'Romania',
 	HomePhone = '0712292991',
-	Notes = 'Stefan a absolvit Universitatea din St. Andrews, Scotia, cu diploma in stiinte in 1976. Dupa ce s-a alaturat companiei ca reprezentant de vanzari in 1992, a petrecut 6 luni intr-un program de orientare la biroul din Seattle si apoi a revenit la postul sau permanent in Londra . A fost promovat manager de vanzari in martie 1993. Domnul Buchanan a absolvit cursurile "Telemarketing de succes" si "Managementul vanzarilor internationale". Este fluent in franceza.'
+	Notes = 'Stefan a absolvit Universitatea din St. Andrews, Scotia, cu diploma in stiinte in 1986. Dupa ce s-a alaturat companiei ca reprezentant de vanzari in 2002, a petrecut 6 luni intr-un program de orientare la biroul din Seattle si apoi a revenit la postul sau permanent in Londra . A fost promovat manager de vanzari in martie 1993. Domnul Buchanan a absolvit cursurile "Telemarketing de succes" si "Managementul vanzarilor internationale". Este fluent in franceza.'
 where LastName = 'Buchanan';
 
 update Employees
@@ -141,7 +95,7 @@ Set LastName = 'Surdu',
 	PostalCode = '062242',
 	Country = 'Romania',
 	HomePhone = '0751217471',
-	Notes = 'Mihai este absolvent al Universitatii din Sussex (MA, economie, 1983) si al Universitatii din California, Los Angeles (MBA, marketing, 1986). De asemenea, a luat cursurile "Vanzari multiculturale" si "Managementul timpului pentru profesionistii in vanzari". Este fluent in limba japoneza si poate citi si scrie franceza, portugheza si spaniola.'
+	Notes = 'Mihai este absolvent al Universitatii din Sussex (MA, economie, 1993) si al Universitatii din California, Los Angeles (MBA, marketing, 1996). De asemenea, a luat cursurile "Vanzari multiculturale" si "Managementul timpului pentru profesionistii in vanzari". Este fluent in limba japoneza si poate citi si scrie franceza, portugheza si spaniola.'
 where LastName = 'Suyama';
 
 update Employees
@@ -154,7 +108,7 @@ Set LastName = 'Kiritescu',
 	PostalCode = '060823',
 	Country = 'Romania',
 	HomePhone = '0718642371',
-	Notes = 'Robert a fost in Corpul Pacii si a calatorit mult inaintae de a-si incheia studiile in limba engleza la Universitatea din Michigan in 1992, anul in care sa alatura companiei. Dupa finalizarea cursului de "Vanzarea in Europa" a fost transferat la biroul din Londra in martie 1993.'
+	Notes = 'Robert a fost in Corpul Pacii si a calatorit mult inaintae de a-si incheia studiile in limba engleza la Universitatea din Michigan in 2002, anul in care sa alatura companiei. Dupa finalizarea cursului de "Vanzarea in Europa" a fost transferat la biroul din Londra in martie 2003.'
 where LastName = 'King';
 
 update Employees
@@ -354,10 +308,6 @@ go
 
 ---------------------------------------------------------------------------------------
 --		Customers
-
---select * from Customers
-
---select * from Customers
 
 update Customers
 	set CompanyName = 'Vinyl Fever',
@@ -1530,328 +1480,9 @@ set CompanyName = 'FAN Courier',
 	Phone = '+40742552233 '
 where ShipperID = 3;
 go
----------------------------------------------------------------------------------------
---		Products
-
-alter table Products
-alter column QuantityPerUnit nvarchar(30);
-go
-
-update Products
-set QuantityPerUnit = '10 cutii x 20 pungi'
-where ProductID = 1;
-
-update Products
-set QuantityPerUnit = '24 sticle de 355ml'
-where ProductID = 2;
-
-update Products
-set QuantityPerUnit = '12 sticle de 550ml'
-where ProductID = 3;
-
-update Products
-set QuantityPerUnit = '48 borcane de 177ml'
-where ProductID = 4;
-
-update Products
-set QuantityPerUnit = '36 cutii'
-where ProductID = 5;
-
-update Products
-set QuantityPerUnit = '12 borcane de 236ml'
-where ProductID = 6;
-
-update Products
-set QuantityPerUnit = '12 pachete de 5.4kg'
-where ProductID = 7;
-
-update Products
-set QuantityPerUnit = '12 borcane de 355ml'
-where ProductID = 8;
-
-update Products
-set QuantityPerUnit = '18 packete de 500g'
-where ProductID = 9;
-
-update Products
-set QuantityPerUnit = '12 borcane de 200ml'
-where ProductID = 10;
-
-update Products
-set QuantityPerUnit = 'pachete de 1kg'
-where ProductID = 11;
-
-update Products
-set QuantityPerUnit = '10 pachete de 500g'
-where ProductID = 12;
-
-update Products
-set QuantityPerUnit = 'cutii de 2kg'
-where ProductID = 13;
-
-update Products
-set QuantityPerUnit = '40 pachete de 100g'
-where ProductID = 14;
-
-update Products
-set QuantityPerUnit = '24 sticle de 250ml'
-where ProductID = 15;
-
-update Products
-set QuantityPerUnit = '32 cutii de 500g'
-where ProductID = 16;
-
-update Products
-set QuantityPerUnit = '20 conserve de 1kg'
-where ProductID = 17;
-
-update Products
-set QuantityPerUnit = 'pachet de 16kg'
-where ProductID = 18;
-
-update Products
-set QuantityPerUnit = '10 cutii cu 12 piese cutia'
-where ProductID = 19;
-
-update Products
-set QuantityPerUnit = '30 de cutii de cadou'
-where ProductID = 20;
-
-update Products
-set QuantityPerUnit = '24 pachete cu 4 piese pachetul'
-where ProductID = 21;
-
-update Products
-set QuantityPerUnit = '24 pachete de 500g'
-where ProductID = 22;
-
-update Products
-set QuantityPerUnit = '12 pachete de 250g'
-where ProductID = 23;
-
-update Products
-set QuantityPerUnit = '12 conserve de 355ml'
-where ProductID = 24;
-
-update Products
-set QuantityPerUnit = '20 pahare de 450g'
-where ProductID = 25;
-
-update Products
-set QuantityPerUnit = '100 pungi de 250g'
-where ProductID = 26;
-
-update Products
-set QuantityPerUnit = '100 bucati de 100g'
-where ProductID = 27;
-
-update Products
-set QuantityPerUnit = '25 borcane de 825g'
-where ProductID = 28;
-
-update Products
-set QuantityPerUnit = '50 pungi cu 30 sosuri punga'
-where ProductID = 29;
-
-update Products
-set QuantityPerUnit = '100 pahare de 200g'
-where ProductID = 30;
-
-update Products
-set QuantityPerUnit = '12 pachete de 100g'
-where ProductID = 31;
-
-update Products
-set QuantityPerUnit = '24 pachete de 200g'
-where ProductID = 32;
-
-update Products
-set QuantityPerUnit = '500g'
-where ProductID = 33;
-
-update Products
-set QuantityPerUnit = '24 sticle de 355ml'
-where ProductID = 34;
-
-update Products
-set QuantityPerUnit = '24 sticle de 355ml'
-where ProductID = 35;
-
-update Products
-set QuantityPerUnit = '24 borcane de 250g'
-where ProductID = 36;
-
-update Products
-set QuantityPerUnit = '12 pachete de 500g'
-where ProductID = 37;
-
-update Products
-set QuantityPerUnit = '12 sticle de 750g'
-where ProductID = 38;
-
-update Products
-set QuantityPerUnit = 'sticla de 750g'
-where ProductID = 39;
-
-update Products
-set QuantityPerUnit = '24 conserve de 118ml'
-where ProductID = 40;
-
-update Products
-set QuantityPerUnit = '12 doze de 355ml'
-where ProductID = 41;
-
-update Products
-set QuantityPerUnit = '32 pachete de 1kg'
-where ProductID = 42;
-
-update Products
-set QuantityPerUnit = '16 conserve de 500g'
-where ProductID = 43;
-
-update Products
-set QuantityPerUnit = '20 pungi de 2kg'
-where ProductID = 44;
-
-update Products
-set QuantityPerUnit = 'pachet de 1kg'
-where ProductID = 45;
-
-update Products
-set QuantityPerUnit = '4 pahare de 450g'
-where ProductID = 46;
-
-update Products
-set QuantityPerUnit = '10 cutii de 118g'
-where ProductID = 47;
-
-update Products
-set QuantityPerUnit = '10 pachete'
-where ProductID = 48;
-
-update Products
-set QuantityPerUnit = '24 pachete de 50g'
-where ProductID = 49;
-
-update Products
-set QuantityPerUnit = '12 bauturi de 100g'
-where ProductID = 50;
-
-update Products
-set QuantityPerUnit = '50 pachete de 300g'
-where ProductID = 51;
-
-update Products
-set QuantityPerUnit = '16 cutii de 2kg'
-where ProductID = 52;
-
-update Products
-set QuantityPerUnit = '48 bucati'
-where ProductID = 53;
-
-update Products
-set QuantityPerUnit = '16 bucati'
-where ProductID = 54;
-
-update Products
-set QuantityPerUnit = '24 cutii a 2 bucati'
-where ProductID = 55;
-
-update Products
-set QuantityPerUnit = '24 pachete de 250g'
-where ProductID = 56;
-
-update Products
-set QuantityPerUnit = '24 pachete de 250g'
-where ProductID = 57;
-
-update Products
-set QuantityPerUnit = '24 piese'
-where ProductID = 58;
-
-update Products
-set QuantityPerUnit = 'pachet de 5 kg'
-where ProductID = 59;
-
-update Products
-set QuantityPerUnit = '15 randuri de 300g'
-where ProductID = 60;
-
-update Products
-set QuantityPerUnit = '24 sticle de 500ml'
-where ProductID = 61;
-
-update Products
-set QuantityPerUnit = '48 bucati'
-where ProductID = 62;
-
-update Products
-set QuantityPerUnit = '15 borcane de 625g'
-where ProductID = 63;
-
-update Products
-set QuantityPerUnit = '20 pungi cu 4 bucati fiecare'
-where ProductID = 64;
-
-update Products
-set QuantityPerUnit = '32 sticle de 236ml'
-where ProductID = 65;
-
-update Products
-set QuantityPerUnit = '24 borcane de 236ml'
-where ProductID = 66;
-
-update Products
-set QuantityPerUnit = '24 sticle de 355ml'
-where ProductID = 67;
-
-update Products
-set QuantityPerUnit = '10 cutii cu  8 bucati'
-where ProductID = 68;
-
-update Products
-set QuantityPerUnit = 'pachet de 10kg'
-where ProductID = 69;
-
-update Products
-set QuantityPerUnit = '24 sticle de 355ml'
-where ProductID = 70;
-
-update Products
-set QuantityPerUnit = '10 pachete de 500g'
-where ProductID = 71;
-
-update Products
-set QuantityPerUnit = '24 pachete de 150g'
-where ProductID = 72;
-
-update Products
-set QuantityPerUnit = '24 pachete de 200g'
-where ProductID = 73;
-
-update Products
-set QuantityPerUnit = 'pachet de 5 kg'
-where ProductID = 74;
-
-update Products
-set QuantityPerUnit = '24 sticle de 0.5l'
-where ProductID = 75;
-
-update Products
-set QuantityPerUnit = '500ml'
-where ProductID = 76;
-
-update Products
-set QuantityPerUnit = '12 cutii'
-where ProductID = 77;
-go
 
 ---------------------------------------------------------------------------------------
 --		Orders
-
---select * from Orders
---select * from Customers
-
 
 declare @count bigint = 1;
 declare @customerNum int = (select count(Customers.CompanyName) from Customers);
@@ -1930,6 +1561,13 @@ go
 
 -- aici bagi produsele 
 truncate table Products
+
+alter table Products
+add img text,
+	img1 text,
+	img2 text,
+	img3 text;
+
 insert into Products values('Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true')
 insert into Products values('CAT B25 Dual SIM Black',1,1,1,244,10,1,1,'true')
 insert into Products values('Nokia 222 Black',1,1,1,169,10,1,1,'true')
@@ -1969,8 +1607,14 @@ select * from Products
 
 /* Alter table pentu a il putea modifica*/
 alter table Products
-drop constraint FK_Products_Categories
+drop constraint FK_Products_Categories;
 go
+
+alter table Categories
+drop column Picture;
+
+alter table Categories
+add img text;
 
 -- aici bagi categoriile 
 update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
@@ -1993,8 +1637,7 @@ ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
 REFERENCES [dbo].Products (ProductID)
 go
 
-
 --------------------------------------------------------------------------------------
 --		other
-drop procedure getImg
+--drop procedure getImg
 go
