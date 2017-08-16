@@ -1921,30 +1921,6 @@ end;
 go
 
 ----------------------------------------------------------------------------------
---	Category Changes
-
-
-/* Alter table pentu a il putea modifica*/
-alter table Products
-drop constraint FK_Products_Categories
-go
-
--- aici bagi categoriile 
-
-select * from Categories
-update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
-update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
-update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse' where CategoryID=3
-update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi' where CategoryID=4
-update Categories set CategoryName='Bookreader',Description='Bookreader' where CategoryID=5
-delete from Categories where CategoryID between 6 and 8
-/*#1. create FOREIGN key */
-ALTER TABLE [dbo].Products
-ADD  CONSTRAINT FK_Products_Categories FOREIGN KEY(CategoryID)
-REFERENCES [dbo].Categories (CategoryID)
-go
-
-----------------------------------------------------------------------------------
 --	Product changes
 
 /* Alter table pentu a il putea modifica*/
@@ -1983,37 +1959,42 @@ insert into Products values('Kindle PaperWhite New Model 2015 Black',1,5,1,629,1
 insert into Products values('Kindle PaperWhite New Model 2015 White',1,5,1,599,10,1,1,'true')
 insert into Products values('PocketBook Touch HD Black',1,5,1,799,10,1,1,'true')
 insert into Products values('Bookeen Cybook Muse Light 4GB Black',1,5,1,579,10,1,1,'true')
-GO																							 				  
-----------------------------------------------------------------------------------			 				  
---	Change product reference in order														 				  
-declare @whProductCount int = 1;																			  
-declare @productNumber int = (select count(Products.ProductID) from Products);
-create table #tempTab(id int, val int);
-insert into #tempTab values(1, 0);
-while(@productNumber >= @whProductCount)
-begin
-	update #tempTab
-	set val = ((SELECT foo.ProductID as prodid FROM (
-		SELECT
-			ROW_NUMBER() OVER (ORDER BY ProductID ASC) AS rownumber, ProductID
-			FROM [Order Details]
-		) AS foo
-	WHERE rownumber = @whProductCount))
-	where id = 1;
+GO
 
-	if((select val from #tempTab) > @productNumber)
-	begin
-		update [Order Details]
-		set ProductID = (select val from #tempTab where id = 1) % @productNumber;
-	end
-	set @whProductCount = @whProductCount + 1;
-end
-drop table #tempTab;
+select * from Products
+
+----------------------------------------------------------------------------------
+--	Category Changes
+
+
+/* Alter table pentu a il putea modifica*/
+alter table Products
+drop constraint FK_Products_Categories
+go
+
+-- aici bagi categoriile 
+update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
+update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
+update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse' where CategoryID=3
+update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi' where CategoryID=4
+update Categories set CategoryName='Bookreader',Description='Bookreader' where CategoryID=5
+delete from Categories where CategoryID between 6 and 8
+/*#1. create FOREIGN key */
+ALTER TABLE [dbo].Products
+ADD  CONSTRAINT FK_Products_Categories FOREIGN KEY(CategoryID)
+REFERENCES [dbo].Categories (CategoryID)
+go
+
+--alg :(
 
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].[Order Details]
 ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
 REFERENCES [dbo].Products (ProductID)
 go
+
+
+--------------------------------------------------------------------------------------
+--		other
 drop procedure getImg
 go
