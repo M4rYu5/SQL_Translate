@@ -1909,3 +1909,37 @@ begin
 set @count = @count +  1;
 end;
 go
+
+----------------------------------------------------------------------------------
+--	Category Changes
+
+
+/* Alter table pentu a il putea modifica*/
+alter table Products
+drop constraint FK_Products_Suppliers
+go
+
+-- aici bagi categoriile 
+
+/*#1. create FOREIGN key */
+ALTER TABLE [dbo].Products
+ADD  CONSTRAINT FK_Products_Suppliers FOREIGN KEY(SupplierID)
+REFERENCES [dbo].Suppliers (SupplierID)
+go
+
+----------------------------------------------------------------------------------
+--	Product changes
+
+/* Alter table pentu a il putea modifica*/
+alter table [Order Details]
+drop constraint FK_Order_Details_Products
+go
+
+-- aici bagi produsele 
+
+/*#1. create FOREIGN key */
+ALTER TABLE [dbo].[Order Details]
+ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
+REFERENCES [dbo].Products (ProductID)
+go
+
