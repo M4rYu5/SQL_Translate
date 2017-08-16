@@ -1941,11 +1941,10 @@ go
 --	Change product reference in order
 declare @whProductCount int = 1;
 declare @productNumber int = (select count(Products.ProductID) from Products);
+create table #tempTab(id int, val int);
+insert into #tempTab values(1, 0);
 while(@productNumber >= @whProductCount)
 begin
-	
-	create table #tempTab(id int, val int);
-	insert into #tempTab values(1, 0);
 	update #tempTab
 	set val = ((SELECT foo.ProductID as prodid FROM (
 		SELECT
@@ -1960,9 +1959,9 @@ begin
 		update [Order Details]
 		set ProductID = (select val from #tempTab where id = 1) % @productNumber;
 	end
-	drop table #tempTab;
 	set @whProductCount = @whProductCount + 1;
 end
+drop table #tempTab;
 
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].[Order Details]
