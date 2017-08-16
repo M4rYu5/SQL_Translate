@@ -1,4 +1,3 @@
-﻿---------------------------------------------------------------------------------------
 ﻿create procedure getImg @pathImage nvarchar(255)
 AS
 	declare	
