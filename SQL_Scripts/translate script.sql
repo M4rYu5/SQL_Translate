@@ -1,4 +1,15 @@
 ﻿---------------------------------------------------------------------------------------
+﻿create procedure getImg @pathImage nvarchar(255)
+AS
+	declare	
+		@pathFolder nvarchar(255)=N'C:\Users\intern\Source\GitHub\SQL_Translate\SQL_Scripts\Images',
+		@sql nvarchar(255);
+		set @sql=N'SELECT BulkColumn FROM Openrowset( Bulk '''+@pathFolder+@pathImage+''', Single_Blob) as img'
+exec sp_executesql @sql;
+go
+
+
+---------------------------------------------------------------------------------------
 --		Initializare
 use Northwind;
 go
@@ -1967,4 +1978,6 @@ drop table #tempTab;
 ALTER TABLE [dbo].[Order Details]
 ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
 REFERENCES [dbo].Products (ProductID)
+go
+drop procedure getImg
 go
