@@ -1937,9 +1937,35 @@ go
 
 -- aici bagi produsele 
 
+----------------------------------------------------------------------------------
+--	Change product reference in order
+declare @whProductCount int = 1;
+declare @productNumber int = (select count(Products.ProductID) from Products);
+while(@productNumber >= @whProductCount)
+begin
+	
+	create table #tempTab(id int, val int);
+	insert into #tempTab values(1, 0);
+	update #tempTab
+	set val = ((SELECT foo.ProductID as prodid FROM (
+		SELECT
+			ROW_NUMBER() OVER (ORDER BY ProductID ASC) AS rownumber, ProductID
+			FROM [Order Details]
+		) AS foo
+	WHERE rownumber = @whProductCount))
+	where id = 1;
+
+	if((select val from #tempTab) > @productNumber)
+	begin
+		update [Order Details]
+		set ProductID = (select val from #tempTab where id = 1) % @productNumber;
+	end
+	drop table #tempTab;
+	set @whProductCount = @whProductCount + 1;
+end
+
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].[Order Details]
 ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
 REFERENCES [dbo].Products (ProductID)
 go
-
