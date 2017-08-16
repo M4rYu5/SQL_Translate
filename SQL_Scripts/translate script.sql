@@ -1930,7 +1930,16 @@ drop constraint FK_Products_Suppliers
 go
 
 -- aici bagi categoriile 
-
+alter table Products
+drop constraint FK_Products_Categories
+go
+select * from Categories
+update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
+update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
+update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse' where CategoryID=3
+update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi' where CategoryID=4
+update Categories set CategoryName='Bookreader',Description='Bookreader' where CategoryID=5
+delete from Categories where CategoryID between 6 and 8
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].Products
 ADD  CONSTRAINT FK_Products_Suppliers FOREIGN KEY(SupplierID)
