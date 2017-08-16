@@ -1944,9 +1944,28 @@ go
 alter table [Order Details]
 drop constraint FK_Order_Details_Products
 go
-
 -- aici bagi produsele 
+select * from Products
+	insert into Products values(1,'Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true')
+	insert into Products values(2,'CAT B25 Dual SIM Black',1,1,1,244,10,1,1,'true')
+	insert into Products values(3,'Nokia 222 Black',1,1,1,169,10,1,1,'true')
+	insert into Products values(4,'Nokia 230 Dark Silver',1,1,1,229,10,1,1,'true')
+	insert into Products values(5,'Nokia 130 Single SIM Black',1,1,1,99,10,1,1,'true')
 
+	insert into Products values(6,'Apple iPhone 7 32GB Black',1,2,1,2999,10,1,1,'true')
+	insert into Products values(7,'Samsung Galaxy J5(2016) J510 Dual SIM Gold',1,2,1,849,10,1,1,'true')
+	insert into Products values(8,'Samsung Galaxy S8 G950F 64GB 4G Black',1,2,1,2989,10,1,1,'true')
+	insert into Products values(9,'Apple iPhone 6 32GB Space Gray',1,2,1,1899,10,1,1,'true')
+	insert into Products values(10,'Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Black',1,2,1,349,10,1,1,'true')
+	
+	insert into Products values(11,'Selfie Stick Android iOS',1,3,1,39,10,1,1,'true')
+	insert into Products values(12,'Casti JBL T110 Negre',1,3,1,39,10,1,1,'true')
+	insert into Products values(13,'Baterie Externa ADATA P20000D Power Bank 20000mAh Black',1,3,1,109,10,1,1,'true')
+	insert into Products values(14,'Incarcator Samsung TA20 microUSB 2A AFC Fast Charge White',1,3,1,54,10,1,1,'true')
+	insert into Products values(15,'Skin Samsung Galaxy S6 G920 Avengers',1,3,1,9,10,1,1,'true')
+
+
+GO
 ----------------------------------------------------------------------------------
 --	Change product reference in order
 declare @whProductCount int = 1;
