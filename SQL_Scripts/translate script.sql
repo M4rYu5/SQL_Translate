@@ -1926,13 +1926,11 @@ go
 
 /* Alter table pentu a il putea modifica*/
 alter table Products
-drop constraint FK_Products_Suppliers
+drop constraint FK_Products_Categories
 go
 
 -- aici bagi categoriile 
-alter table Products
-drop constraint FK_Products_Categories
-go
+
 select * from Categories
 update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
 update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
@@ -1942,8 +1940,8 @@ update Categories set CategoryName='Bookreader',Description='Bookreader' where C
 delete from Categories where CategoryID between 6 and 8
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].Products
-ADD  CONSTRAINT FK_Products_Suppliers FOREIGN KEY(SupplierID)
-REFERENCES [dbo].Suppliers (SupplierID)
+ADD  CONSTRAINT FK_Products_Categories FOREIGN KEY(CategoryID)
+REFERENCES [dbo].Categories (CategoryID)
 go
 
 ----------------------------------------------------------------------------------
