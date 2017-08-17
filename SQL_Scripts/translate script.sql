@@ -1577,7 +1577,6 @@ add img text null,
 
 --telefoane clasice
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-230-dual-sim-dark-silver.jpg', null, null, null);
-<<<<<<< HEAD
 insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',2,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
 insert into Products values('Telefon Mobil Nokia 3310 Dual SIM Dark Blue',1,1,1,249,10,1,1,'true','~/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue.jpg', '~/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue-1.jpg', null, null)
 insert into Products values('Telefon Mobil Alcatel Tiger X3 1016G Black',4,1,1,69,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-2.jpg','~/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-4.jpg', null, null)
@@ -1593,18 +1592,6 @@ insert into Products values('Telefon Mobil Karbonn K-flip Dual Sim White',1,1,1,
 insert into Products values('Telefon Mobil MyPhone Metro Red',2,1,1,209,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red-3.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red-2.jpg');
 insert into Products values('Telefon Mobil MyPhone 6310 Dual Sim Black',3,1,1,104,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-myphone-6310-dual-sim-black.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-6310-dual-sim-black-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-6310-dual-sim-black-4.jpg', null);
 
-
---
-=======
-insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black.jpg', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-2.jpg', '~/Images/telefoane_clasice/', null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 
 -- Accesorii
 insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Roz',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---roz.jpg', null, null, null);
@@ -1645,7 +1632,6 @@ insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dua
 insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
 insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
 
->>>>>>> dd14e6c24e67d071715131770ce40ddbac0fae70
 GO
 
 ----------------------------------------------------------------------------------
