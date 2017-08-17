@@ -1573,7 +1573,8 @@ add img text null,
 	img3 text null;
 --select * from Products
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-230-dual-sim-dark-silver.jpg', null, null, null);
-insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
+insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-2.jpg', '~/Images/telefoane_clasice/', null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
@@ -1581,7 +1582,26 @@ insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+
+-- Accesorii
+insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Roz',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---roz.jpg', null, null, null);
+insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Verde',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---verde.jpg', null, null, null);
+insert into Products values('Curea Ceas Garmin Forerunner 910XT GPS Negru',4,3,1,86,10,1,1,'true', '~/Images/accesorii/curea-ceas-garmin-forerunner-910xt-gps-negru.jpg', null, null, null);
+insert into Products values('Bratara Smartwatch Samsung Gear S3 Silicon Maron',4,3,1,127,10,1,1,'true', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-maron.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-maron-1.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-maron-2.jpg', null);
+insert into Products values('Curea Apple Watch 38mm Piele Neagra MLHG2',4,3,1,964,10,1,1,'true', '~/Images/accesorii/curea-apple-watch-38mm-piele-neagra-mlhg2-1.jpg', '~/Images/accesorii/curea-apple-watch-38mm-piele-neagra-mlhg2-2.jpg', '~/Images/accesorii/curea-apple-watch-38mm-piele-neagra-mlhg2.jpg', null);
+insert into Products values('Dock Slate Native Union Pentru Apple Watch',4,3,1,217,10,1,1,'true', '~/Images/accesorii/dock-slate-native-union-pentru-apple-watch.jpg', '~/Images/accesorii/dock-slate-native-union-pentru-apple-watch-2.jpg', '~/Images/accesorii/dock-slate-native-union-pentru-apple-watch-1.jpg', null);
+insert into Products values('Dock Native Union Luxury Tech Marble Pentru Apple Watch',4,3,1,423,10,1,1,'true', '~/Images/accesorii/dock-native-union-luxury-tech-marble-pentru-apple-watch.jpg', '~/Images/accesorii/dock-native-union-luxury-tech-marble-pentru-apple-watch-1.jpg', null, null);
+insert into Products values('Stand de incarcare pentru Huawei Watch W1 Argintiu',4,3,1,95,10,1,1,'true', '~/Images/accesorii/stand-de-incarcare-pentru-huawei-watch-w1-argintiu.jpg', '~/Images/accesorii/stand-de-incarcare-pentru-huawei-watch-w1-argintiu-1.jpg', null, null);
+insert into Products values('Cablu de incarcare Fitbit Flex',4,3,1,25,10,1,1,'true', '~/Images/accesorii/cablu-de-incarcare-fitbit-flex.jpg', null, null, null);
+insert into Products values('Husa Bumper Cellularline pentru Apple Watch 38mm',4,3,1,49,10,1,1,'true', '~/Images/accesorii/husa-bumper-cellularline-pentru-apple-watch-38mm.jpg', '~/Images/accesorii/husa-bumper-cellularline-pentru-apple-watch-38mm-1.jpg', '~/Images/accesorii/husa-bumper-cellularline-pentru-apple-watch-38mm-2.jpg', null);
+insert into Products values('Bratara Smartwatch Samsung Gear S3 Silicon Argintiur',4,3,1,128,10,1,1,'true', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-argintiu.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-argintiu-1.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-argintiu-2.jpg', null);
+insert into Products values('Bratara Smartwatch Samsung Gear S3 Piele Neagra',4,3,1,115 ,10,1,1,'true', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-piele-neagra.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-piele-neagra-1.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-piele-neagra-3.jpg', null);
+insert into Products values('Bratara Smartwatch Samsung Gear S3 Silicon Khaki',4,3,1,86,10,1,1,'true', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-khaki.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-khaki-1.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-khaki-3.jpg', null);
+insert into Products values('Bratara Smartwatch Samsung Gear S3 Silicon Blue Black',4,3,1,86,10,1,1,'true', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-blue-black.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-blue-black-1.jpg', '~/Images/accesorii/bratara-smartwatch-samsung-gear-s3-silicon-blue-black-2.jpg', null);
+insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Watch 42 mm Negra',4,3,1,36,10,1,1,'true', '~/Images/accesorii/folie-protectie-sticla-securizata-curbata-apple-watch-42-mm-negra.jpg', null, null, null);
+insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Watch 38 mm Negra',4,3,1,36,10,1,1,'true', '~/Images/accesorii/folie-protectie-sticla-securizata-curbata-apple-watch-negra.jpg', null, null, null);
+
+
 GO
 
 ----------------------------------------------------------------------------------
