@@ -1560,9 +1560,21 @@ drop constraint FK_Order_Details_Products
 go
 
 --supliers
+alter table Products
+drop constraint FK_Products_Suppliers
+go
+truncate table [dbo].[Suppliers]
+--sup list
 
-
-
+ALTER TABLE [dbo].Products
+ADD  CONSTRAINT FK_Products_Suppliers FOREIGN KEY(SupplierID)
+REFERENCES [dbo].Suppliers (SupplierID)
+go
+select * from Suppliers
+insert into Suppliers values('EURO GSM IMPEX S.R.L.','Ion Vasilde','Proprietar','B-dul Muncii nr.18','CLUJ-NAPOCA',null,'400641','Romania','0264450450',null,'https://eurogsm.ro');
+insert into Suppliers values('GERSIM IMPEX S.R.L.','Mircea Daniel','Manager depozit','Strada Bilciurești 9A','BUCURESTI',null,'014012','Romania','0213264850','0213264851','http://www.gersim.ro');
+insert into Suppliers values('EMAG S.A.','Dumitru George','Agent Vanzari','Swan Office Park, Windsor Building Sos. Bucureşti Nord nr. 15-23','ILFOV',null,'077190','Romania','0722.25.00.00',null,'https://emag.ro');
+insert into Suppliers values('SC MEDIA GALAXY S.R.L.','Popescu Mihai','Reprezentant Vanzari','Bulevardul Poligrafiei Nr.1, Sector 1','Bucuresti',null,'400641','Romania','0212062000','0213199939','www.mediagalaxy.ro');
 -- aici bagi produsele 
 truncate table Products
 
