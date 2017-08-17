@@ -14,12 +14,11 @@ go
 
 ---------------------------------------------------------------------------------------
 --		Employees
-
 alter table Employees
 	drop column Extension,
-		 column Region
+		column Region
 go
-
+select * from Products
 update Employees
 Set LastName = 'Danciu', 
 	FirstName = 'Nicoleta', 
@@ -1644,12 +1643,24 @@ insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dua
 insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
 insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
 
-GO
-;
+--gadgeturi
+insert into Products values('Boxa Portabila Emie Cybertron Wireless',1,4,1,749,10,1,1,'true','~/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru','~/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru-1',null,null)
+insert into Products values('Ochelari Samsung Gear VR 2 SM-R323 Negru',1,4,1,209,10,1,1,'true','~/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru','~/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru-1','~/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru-2','~/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru-3')
+insert into Products values('Manusi cu Casca Bluetooth Hi-Fun M Black',1,4,1,229,10,1,1,'true','~/Images/Gadgeturi/manusi-bluetooth-hi-fun-m-black','~/Images/Gadgeturi/manusi-bluetooth-hi-fun-m-black-1',null,null)
+insert into Products values('Dispozitiv monitorizare somn SenSe Sleep',1,4,1,119,10,1,1,'true','~/Images/Gadgeturi/dispozitiv-monitorizare-somn-sense-sleep-peanut','~/Images/Gadgeturi/dispozitiv-monitorizare-somn-sense-sleep-peanut-1','~/Images/Gadgeturi/dispozitiv-monitorizare-somn-sense-sleep-peanut-2',null)
+insert into Products values('Telecomanda Bluetooth Esperanza',1,4,1,28,10,1,1,'true','~/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100','~/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100-3','~/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100-4','~/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100-6')
+insert into Products values('Caciula Stereo Cellularline Music Cap cu Microfon Negru',1,4,1,37,10,1,1,'true', '~/Images/telefoane_clasice/caciula-stereo-cellularline-music-cap-cu-microfon-negru', '~/Images/telefoane_clasice/caciula-stereo-cellularline-music-cap-cu-microfon-negru-1', '~/Images/telefoane_clasice/caciula-stereo-cellularline-music-cap-cu-microfon-negru-2', null);
+insert into Products values('Dispozitiv localizare cu Bluetooth Media-Tech BT Seeker',1,4,1,29,10,1,1,'true', '~/Images/Gadgeturi/detector-de-chei-media-tech-bt-seeker-negru', '~/Images/Gadgeturi/detector-de-chei-media-tech-bt-seeker-negru-1', null, null);
+insert into Products values('Telecomanda Media-Tech Trigger BT pentru VR Matrix PRO Negru',1,4,1,39,10,1,1,'true', '~/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru', '~/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru-1', '~/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru-2', '~/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru-3');
+insert into Products values('Drona Arcade Orbit',1,4,1,149,10,1,1,'true', '~/Images/Gadgeturi/drona-arcade-orbit', '~/Images/Gadgeturi/drona-arcade-orbit-1', '~/Images/Gadgeturi/drona-arcade-orbit-2', '~/Images/Gadgeturi/drona-arcade-orbit-3');
+insert into Products values('Camera Video Fondi OnReal Negru',1,4,1,514,10,1,1,'true', '~/Images/Gadgeturi/camera-video-fondi-onreal-negru', '~/Images/Gadgeturi/camera-video-fondi-onreal-negru-1', null,null);
+insert into Products values('Telecomanda Arcade Bluetooth pentru Arcade Horizon VR',1,4,1,74,10,1,1,'true', '~/Images/Gadgeturi/telecomanda-arcade-bluetooth-pentru-arcade-horizon-vr',null,null,null);
+insert into Products values('Robot Inteligent Interactiv Ubtech Alpha 1S Bluetooth',1,4,1,2369,10,1,1,'true', '~/Images/Gadgeturi/robot-inteligent-interactiv-ubtech-alpha-1s-bluetooth', '~/Images/Gadgeturi/robot-inteligent-interactiv-ubtech-alpha-1s-bluetooth-1', '~/Images/Gadgeturi/robot-inteligent-interactiv-ubtech-alpha-1s-bluetooth-2', '~/Images/Gadgeturi/robot-inteligent-interactiv-ubtech-alpha-1s-bluetooth-4');
+insert into Products values('Robot Inteligent de Serviciu Uno',1,4,1,3249,10,1,1,'true', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-1', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-2', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-3');
+insert into Products values('Boxa Portabila Bluetooth JBL Flip 4 Waterproof Black',1,4,1,579,10,1,1,'true', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-1', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-2', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-3');
+insert into Products values('Boxa Portabila Bluetooth JBL Charge 2+ Wireless Cu Microfon',1,4,1,499,10,1,1,'true', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-1', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-2', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-3');
 
-
-
-
+GO;
 ----------------------------------------------------------------------------------
 --	Category Changes
 
