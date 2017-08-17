@@ -1555,38 +1555,46 @@ go
 
 /* Alter table pentu a il putea modifica*/
 alter table [Order Details]
-drop constraint FK_Order_Details_Products
+drop constraint FK_Order_Details_Products;
 go
-
 --supliers
 alter table Products
-drop constraint FK_Products_Suppliers
+drop constraint FK_Products_Categories;
 go
-truncate table [dbo].[Suppliers]
---sup list
+
+alter table Products
+drop constraint FK_Products_Suppliers;
+
+
+	truncate table [dbo].[Suppliers];
+
+	alter table Suppliers
+	alter column [Address] nvarchar(100);
+	--sup list
+	insert into Suppliers values('EURO GSM IMPEX S.R.L.','Ion Vasilde','Proprietar','B-dul Muncii nr.18','CLUJ-NAPOCA',null,'400641','Romania','0264450450',null,'https://eurogsm.ro');
+	insert into Suppliers values('GERSIM IMPEX S.R.L.','Mircea Daniel','Manager depozit','Strada Bilciurești 9A','BUCURESTI',null,'014012','Romania','0213264850','0213264851','http://www.gersim.ro');
+	insert into Suppliers values('EMAG S.A.','Dumitru George','Agent Vanzari','Swan Office Park, Windsor Building Sos. Bucureşti Nord nr. 15-23','ILFOV',null,'077190','Romania','0722.25.00.00',null,'https://emag.ro');
+	insert into Suppliers values('SC MEDIA GALAXY S.R.L.','Popescu Mihai','Reprezentant Vanzari','Bulevardul Poligrafiei Nr.1, Sector 1','Bucuresti',null,'400641','Romania','0212062000','0213199939','www.mediagalaxy.ro');
+
+-- aici stergem produsele
+truncate table Products
 
 ALTER TABLE [dbo].Products
 ADD  CONSTRAINT FK_Products_Suppliers FOREIGN KEY(SupplierID)
 REFERENCES [dbo].Suppliers (SupplierID)
 go
-select * from Suppliers
-insert into Suppliers values('EURO GSM IMPEX S.R.L.','Ion Vasilde','Proprietar','B-dul Muncii nr.18','CLUJ-NAPOCA',null,'400641','Romania','0264450450',null,'https://eurogsm.ro');
-insert into Suppliers values('GERSIM IMPEX S.R.L.','Mircea Daniel','Manager depozit','Strada Bilciurești 9A','BUCURESTI',null,'014012','Romania','0213264850','0213264851','http://www.gersim.ro');
-insert into Suppliers values('EMAG S.A.','Dumitru George','Agent Vanzari','Swan Office Park, Windsor Building Sos. Bucureşti Nord nr. 15-23','ILFOV',null,'077190','Romania','0722.25.00.00',null,'https://emag.ro');
-insert into Suppliers values('SC MEDIA GALAXY S.R.L.','Popescu Mihai','Reprezentant Vanzari','Bulevardul Poligrafiei Nr.1, Sector 1','Bucuresti',null,'400641','Romania','0212062000','0213199939','www.mediagalaxy.ro');
--- aici bagi produsele 
-truncate table Products
 
+-- aici bagam produsele
 alter table Products
-alter column ProductName nvarchar(60);
-
+alter column ProductName nvarchar(70);
+go
 alter table Products
 add img text null,
 	img1 text null,
 	img2 text null,
 	img3 text null;
-
---eBookReader
+go
+--eBookReader select * from Products
 insert into Products values('eBook Reader Kindle 6 Glare Touch Screen WiFi Black 140210',1,5,1,339,10,1,1,'true', '~/Images/eBook/ebook-reader-kindle-6-glare-touch-screen-wifi-black.jpg', null, null, null);
 insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 Black 111399',2,5,1,629,10,1,1,'true', '~/Images/eBook/ebook-reader-kindle-paperwhite-wi-fi-4gb-new-model-2015.jpg', null, null, null);
 insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087',2,5,1,599,10,1,1,'true', '~/Images/eBook/eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087', null, null, null);
@@ -1671,23 +1679,19 @@ insert into Products values('Robot Inteligent Interactiv Ubtech Alpha 1S Bluetoo
 insert into Products values('Robot Inteligent de Serviciu Uno',1,4,1,3249,10,1,1,'true', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-1', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-2', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-3');
 insert into Products values('Boxa Portabila Bluetooth JBL Flip 4 Waterproof Black',1,4,1,579,10,1,1,'true', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-1', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-2', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-3');
 insert into Products values('Boxa Portabila Bluetooth JBL Charge 2+ Wireless Cu Microfon',1,4,1,499,10,1,1,'true', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-1', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-2', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-3');
-
-GO;
+go
 ----------------------------------------------------------------------------------
 --	Category Changes
 
 
 /* Alter table pentu a il putea modifica*/
-alter table Products
-drop constraint FK_Products_Categories;
-go
 
 alter table Categories
 drop column Picture;
-
+go
 alter table Categories
 add img text null;
-
+go
 -- aici bagi categoriile 
 update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
 update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
@@ -1695,23 +1699,16 @@ update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incar
 update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi' where CategoryID=4
 update Categories set CategoryName='eBookreader',Description='Bookreader' where CategoryID=5
 delete from Categories where CategoryID between 6 and 8
+go
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].Products
 ADD  CONSTRAINT FK_Products_Categories FOREIGN KEY(CategoryID)
 REFERENCES [dbo].Categories (CategoryID)
 go
-
 --alg :(
-
+select * from Products
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].[Order Details]
 ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
 REFERENCES [dbo].Products (ProductID)
-go
-
-select * from Products
-
---------------------------------------------------------------------------------------
---		other
---drop procedure getImg
 go
