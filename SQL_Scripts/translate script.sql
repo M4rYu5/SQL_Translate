@@ -1574,7 +1574,8 @@ add img text null,
 	img1 text null,
 	img2 text null,
 	img3 text null;
---select * from Products
+
+--telefoane clasice
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-230-dual-sim-dark-silver.jpg', null, null, null);
 insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black.jpg', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-2.jpg', '~/Images/telefoane_clasice/', null);
@@ -1586,7 +1587,6 @@ insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 
-<<<<<<< HEAD
 -- Accesorii
 insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Roz',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---roz.jpg', null, null, null);
 insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Verde',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---verde.jpg', null, null, null);
@@ -1606,7 +1606,6 @@ insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Wat
 insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Watch 38 mm Negra',4,3,1,36,10,1,1,'true', '~/Images/accesorii/folie-protectie-sticla-securizata-curbata-apple-watch-negra.jpg', null, null, null);
 
 
-=======
 --smartphones
 insert into Products values('Telefon Mobil Apple iPhone 7 32GB Black',1,2,1,2999,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-apple-iphone-7-32gb-black', null, null, null);
 insert into Products values('Telefon Mobil OnePlus 5 A5000 64GB Dual SIM 4G Black',2,2,1,2599,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-oneplus-5-a5000-64gb-dual-sim-4g-black', null, null, null);
@@ -1626,10 +1625,7 @@ insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blac
 insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G White',1,2,1,339,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-white', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black-cpyy-1', null, null);
 insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
 insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
-select * from Products
-select* from Suppliers
-Select * from Categories
->>>>>>> 952acda0f1edbe860c8c91cbb61a69ac07ad70a5
+
 GO
 
 ----------------------------------------------------------------------------------
