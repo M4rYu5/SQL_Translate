@@ -1575,19 +1575,6 @@ add img text null,
 	img2 text null,
 	img3 text null;
 
---telefoane clasice
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-230-dual-sim-dark-silver.jpg', null, null, null);
-<<<<<<< HEAD
-insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-
 --eBookReader
 insert into Products values('eBook Reader Kindle 6 Glare Touch Screen WiFi Black 140210',1,5,1,339,10,1,1,'true', '~/Images/eBook/ebook-reader-kindle-6-glare-touch-screen-wifi-black.jpg', null, null, null);
 insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 Black 111399',2,5,1,629,10,1,1,'true', '~/Images/eBook/ebook-reader-kindle-paperwhite-wi-fi-4gb-new-model-2015.jpg', null, null, null);
@@ -1600,7 +1587,8 @@ insert into Products values('eBook Reader Bookeen CybooK Muse FrontLight Black',
 insert into Products values('eBook Reader Prestigio MultiReader SUPREME 4GB Black',2,5,1,549,10,1,1,'true', '~/Images/eBook/ebook-reader-prestigio-multireader-supreme-4gb-black.jpg', null, null, null);
 insert into Products values('eBook Reader Bookeen Cybook Muse HD 8GB Black',4,5,1,569,10,1,1,'true', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-hd-8gb-black.jpg', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-hd-8gb-black-6.jpg', null, null);
 insert into Products values('eBook Reader Bookeen Cybook Muse Light 4GB Black ',3,5,1,579,10,1,1,'true', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-light-4gb-black.jpg', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-light-4gb-black-3.jpg', null, null);
-=======
+
+--tel clasice
 insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',2,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
 insert into Products values('Telefon Mobil Nokia 3310 Dual SIM Dark Blue',1,1,1,249,10,1,1,'true','~/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue.jpg', '~/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue-1.jpg', null, null)
 insert into Products values('Telefon Mobil Alcatel Tiger X3 1016G Black',4,1,1,69,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-2.jpg','~/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-4.jpg', null, null)
@@ -1656,7 +1644,6 @@ insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dua
 insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
 insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
 
->>>>>>> 59117739e9325ea32bccb47bdd0ef912d7197b06
 GO
 ;
 
