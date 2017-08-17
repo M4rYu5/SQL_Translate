@@ -1679,6 +1679,12 @@ insert into Products values('Robot Inteligent Interactiv Ubtech Alpha 1S Bluetoo
 insert into Products values('Robot Inteligent de Serviciu Uno',1,4,1,3249,10,1,1,'true', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-1', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-2', '~/Images/Gadgeturi/robot-inteligent-uno-de-serviciu-bluetooth-3');
 insert into Products values('Boxa Portabila Bluetooth JBL Flip 4 Waterproof Black',1,4,1,579,10,1,1,'true', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-1', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-2', '~/Images/Gadgeturi/boxa-portabila-jbl-flip-4-3');
 insert into Products values('Boxa Portabila Bluetooth JBL Charge 2+ Wireless Cu Microfon',1,4,1,499,10,1,1,'true', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-1', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-2', '~/Images/Gadgeturi/boxa-portabila-bluetooth-jbl-charge-2--wireless-cu-microfon-gri-3');
+
+insert into Products values('Robot Ubtech Jimu Buzzbot Kit Constructie Interactiv',1,4,1,779,10,1,1,'true', '~/Images/Gadgeturi/robot-ubtech-jimu-buzzbot-kit-constructie-interactiv', '~/Images/Gadgeturi/robot-ubtech-jimu-buzzbot-kit-constructie-interactiv-1', '~/Images/Gadgeturi/robot-ubtech-jimu-buzzbot-kit-constructie-interactiv-2', null);
+insert into Products values('Robot Ubtech Jimu Karbot Kit Constructie',1,4,1,629,10,1,1,'true', '~/Images/Gadgeturi/robot-untech-jimu-karbot-kit-constructie', '~/Images/Gadgeturi/robot-untech-jimu-karbot-kit-constructie-3', null, null);
+insert into Products values('Robot Sphero Ollie cu Aplicatie Albastru',1,4,1,423,10,1,1,'true', '~/Images/Gadgeturi/robot-sphero-ollie-cu-aplicatie-albastru', '~/Images/Gadgeturi/robot-sphero-ollie-cu-aplicatie-albastru-1', '~/Images/Gadgeturi/robot-sphero-ollie-cu-aplicatie-albastru-2', '~/Images/Gadgeturi/robot-sphero-ollie-cu-aplicatie-albastru-3');
+
+
 go
 ----------------------------------------------------------------------------------
 --	Category Changes
