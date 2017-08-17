@@ -1567,6 +1567,9 @@ go
 truncate table Products
 
 alter table Products
+alter column ProductName nvarchar(60);
+
+alter table Products
 add img text null,
 	img1 text null,
 	img2 text null,
@@ -1582,7 +1585,24 @@ insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+
+--eBookReader
+insert into Products values('eBook Reader Kindle 6 Glare Touch Screen WiFi Black 140210',1,5,1,339,10,1,1,'true', '~/Images/eBook/ebook-reader-kindle-6-glare-touch-screen-wifi-black.jpg', null, null, null);
+insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 Black 111399',2,5,1,629,10,1,1,'true', '~/Images/eBook/ebook-reader-kindle-paperwhite-wi-fi-4gb-new-model-2015.jpg', null, null, null);
+insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087',2,5,1,599,10,1,1,'true', '~/Images/eBook/eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087', null, null, null);
+insert into Products values('eBook Reader PocketBook Touch LUX 3 4GB Red pb626',1,5,1,569,10,1,1,'true', '~/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-red.jpg', null, null, null);
+insert into Products values('eBook Reader PocketBook Touch LUX 3 4GB White pb626',2,5,1,569,10,1,1,'true', '~/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-white.jpg', '~/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-white-3.jpg', null, null);
+insert into Products values('eBook Reader PocketBook Touch LUX 3 4GB Grey pb626',1,5,1,569,10,1,1,'true', '~/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-grey.jpg', '~/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-grey-2.jpg', null, null);
+insert into Products values('eBook Reader PocketBook Touch HD Black pb631',4,5,1,799,10,1,1,'true', '~/Images/eBook/ebook-reader-pocketbook-touch-hd-black.jpg', null, null, null);
+insert into Products values('eBook Reader Bookeen CybooK Muse FrontLight Black',3,5,1,699,10,1,1,'true', '~/Images/eBook/e-book-reader-bookeen-cybook-muse-frontlight-black.jpg', null, null, null);
+insert into Products values('eBook Reader Prestigio MultiReader SUPREME 4GB Black',2,5,1,549,10,1,1,'true', '~/Images/eBook/ebook-reader-prestigio-multireader-supreme-4gb-black.jpg', null, null, null);
+insert into Products values('eBook Reader Bookeen Cybook Muse HD 8GB Black',4,5,1,569,10,1,1,'true', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-hd-8gb-black.jpg', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-hd-8gb-black-6.jpg', null, null);
+insert into Products values('eBook Reader Bookeen Cybook Muse Light 4GB Black ',3,5,1,579,10,1,1,'true', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-light-4gb-black.jpg', '~/Images/eBook/ebook-reader-bookeen-cybook-muse-light-4gb-black-3.jpg', null, null);
 GO
+;
+
+
+
 
 ----------------------------------------------------------------------------------
 --	Category Changes
@@ -1604,7 +1624,7 @@ update Categories set CategoryName='Classic',Description='Telefoane cu butoane' 
 update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
 update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse' where CategoryID=3
 update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi' where CategoryID=4
-update Categories set CategoryName='Bookreader',Description='Bookreader' where CategoryID=5
+update Categories set CategoryName='eBookreader',Description='Bookreader' where CategoryID=5
 delete from Categories where CategoryID between 6 and 8
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].Products
