@@ -18,7 +18,7 @@ alter table Employees
 	drop column Extension,
 		column Region
 go
-select * from Products
+
 update Employees
 Set LastName = 'Danciu', 
 	FirstName = 'Nicoleta', 
@@ -1586,7 +1586,7 @@ go
 
 -- aici bagam produsele
 alter table Products
-alter column ProductName nvarchar(70);
+alter column ProductName nvarchar(100);
 go
 alter table Products
 add img text null,
@@ -1662,6 +1662,9 @@ insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blac
 insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G White',1,2,1,339,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-white', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black-cpyy-1', null, null);
 insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
 insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
+insert into Products values('Telefon Mobil Sony Xperia X Compact 32GB 4G Black xcompactblk',4,2,1,1599,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-sony-xperia-x-compact-32gb-4g-black.jpg', '~/Images/Smartphone/telefon-mobil-sony-xperia-x-compact-32gb-4g-black-1.jpg', null, null);
+insert into Products values('Telefon Mobil LG G5 SE H840 32GB Titanium Grey H840 Grey',4,2,1,1349,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey.jpg', '~/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey-1.jpg', '~/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey-4.jpg', '~/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey-5.jpg');
+insert into Products values('Telefon Mobil Apple iPhone 6s 32GB Space Grey iphone 6s 32gb Space Grey',4,2,1,2599,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-apple-iphone-6s-32gb-space-grey.jpg', '~/Images/Smartphone/telefon-mobil-apple-iphone-6s-32gb-space-grey-1.jpg', null, null);
 
 --gadgeturi
 insert into Products values('Boxa Portabila Emie Cybertron Wireless',1,4,1,749,10,1,1,'true','~/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru','~/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru-1',null,null)
@@ -1706,7 +1709,7 @@ ADD  CONSTRAINT FK_Products_Categories FOREIGN KEY(CategoryID)
 REFERENCES [dbo].Categories (CategoryID)
 go
 --alg :(
-select * from Products
+
 /*#1. create FOREIGN key */
 ALTER TABLE [dbo].[Order Details]
 ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
