@@ -1567,21 +1567,32 @@ go
 truncate table Products
 
 alter table Products
+alter column ProductName nvarchar(60);
+
+alter table Products
 add img text null,
 	img1 text null,
 	img2 text null,
 	img3 text null;
 --select * from Products
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-230-dual-sim-dark-silver.jpg', null, null, null);
-insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
-insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',2,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
+insert into Products values('Telefon Mobil Nokia 3310 Dual SIM Dark Blue',1,1,1,249,10,1,1,'true','~/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue.jpg', '~/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue-1.jpg', null, null)
+insert into Products values('Telefon Mobil Alcatel Tiger X3 1016G Black',4,1,1,69,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-2.jpg','~/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-4.jpg', null, null)
+insert into Products values('Telefon Mobil Nokia 3310 Single Sim Orange',1,1,1,249,10,1,1,'true','~/Images/telefoane_clasice/telefon-mobil-nokia-3310-orange.jpg', null, null, null)
+insert into Products values('Telefon Mobil Nokia 130 Dual SIM Red',2,1,1,99,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-130-dual-sim-red.jpg', '~/Images/telefoane_clasice/telefon-mobil-nokia-130-dual-sim-red-2.jpg', null, null);
+insert into Products values('Telefon Mobil Alcatel 1054 White',1,1,1,83,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-alcatel-1054-white.jpg', null, null, null);
+insert into Products values('Telefon Mobil Nokia 150 Single Sim White',3,1,1,141,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-150-dual-sim-white.jpg', null, null, null);
+insert into Products values('Telefon Mobil MaxCom MM 141 Dual Sim Grey',2,1,1,101,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-maxcom-mm-141-dual-sim-4g-grey.jpg', '~/Images/telefoane_clasice/telefon-mobil-maxcom-mm-141-dual-sim-4g-grey-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-maxcom-mm-141-dual-sim-4g-grey-2.jpg', null);
+insert into Products values('Telefon Mobil Alcatel 2008G Black-Silver',1,1,1,165,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-alcatel-2008g-black-silver.jpg', null, null, null);
+insert into Products values('Telefon Mobil Nokia 216 Dual Sim Black',3,1,1,156,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-216-single-sim-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Nokia 216 Dual SIM Grey',1,1,1,156,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-216-dual-sim-grey.jpg','~/Images/telefoane_clasice/telefon-mobil-nokia-216-dual-sim-grey-1.jpg', null, null);
+insert into Products values('Telefon Mobil Karbonn K-flip Dual Sim White',1,1,1,127,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-karbonn-k-flip-dual-sim-white.jpg', '~/Images/telefoane_clasice/telefon-mobil-karbonn-k-flip-dual-sim-white-2.jpg', '~/Images/telefoane_clasice/telefon-mobil-karbonn-k-flip-dual-sim-white-3.jpg', null);
+insert into Products values('Telefon Mobil MyPhone Metro Red',2,1,1,209,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red-3.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-metro-red-2.jpg');
+insert into Products values('Telefon Mobil MyPhone 6310 Dual Sim Black',3,1,1,104,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-myphone-6310-dual-sim-black.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-6310-dual-sim-black-1.jpg', '~/Images/telefoane_clasice/telefon-mobil-myphone-6310-dual-sim-black-4.jpg', null);
+
+
+--
 GO
 
 ----------------------------------------------------------------------------------
