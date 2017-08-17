@@ -1559,6 +1559,10 @@ alter table [Order Details]
 drop constraint FK_Order_Details_Products
 go
 
+--supliers
+
+
+
 -- aici bagi produsele 
 truncate table Products
 
@@ -1567,36 +1571,17 @@ add img text null,
 	img1 text null,
 	img2 text null,
 	img3 text null;
-
-insert into Products values('Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', null, null, null)
-insert into Products values('CAT B25 Dual SIM Black',1,1,1,244,10,1,1,'true', null, null, null)
-insert into Products values('Nokia 222 Black',1,1,1,169,10,1,1,'true', null, null, null)
-insert into Products values('Nokia 230 Dark Silver',1,1,1,229,10,1,1,'true', null, null, null)
-insert into Products values('Nokia 130 Single SIM Black',1,1,1,99,10,1,1,'true', null, null, null)
-
-insert into Products values('Apple iPhone 7 32GB Black',1,2,1,2999,10,1,1,'true', null, null, null)
-insert into Products values('Samsung Galaxy J5(2016) J510 Dual SIM',1,2,1,849,10,1,1,'true', null, null, null)
-insert into Products values('Samsung Galaxy S8 G950F 64GB 4G Black',1,2,1,2989,10,1,1,'true', null, null, null)
-insert into Products values('Apple iPhone 6 32GB Space Gray',1,2,1,1899,10,1,1,'true', null, null, null)
-insert into Products values('Samsung Galaxy J1 Mini Prime J106',1,2,1,349,10,1,1,'true', null, null, null)
-	
-insert into Products values('Selfie Stick Android iOS',1,3,1,39,10,1,1,'true', null, null, null)
-insert into Products values('Casti JBL T110 Negre',1,3,1,39,10,1,1,'true', null, null, null)
-insert into Products values('Baterie Externa ADATA P20000D',1,3,1,109,10,1,1,'true', null, null, null)
-insert into Products values('Incarcator Samsung TA20 microUSB',1,3,1,54,10,1,1,'true', null, null, null)
-insert into Products values('Skin Samsung Galaxy S6 G920 Avengers',1,3,1,9,10,1,1,'true', null, null, null)
-
-insert into Products values('Boxa Portabila Emie Cybertron Wireless',1,4,1,749,10,1,1,'true', null, null, null)
-insert into Products values('Ochelari Samsung Gear VR 2 SM-R323 Negru',1,4,1,209,10,1,1,'true', null, null, null)
-insert into Products values('Manusi cu Casca Bluetooth Hi-Fun M Black',1,4,1,229,10,1,1,'true', null, null, null)
-insert into Products values('Dispozitiv monitorizare somn SenSe Sleep',1,4,1,119,10,1,1,'true', null, null, null)
-insert into Products values('Telecomanda Bluetooth Esperanza',1,4,1,28,10,1,1,'true', null, null, null)
-
-insert into Products values('Kindle 6 Glare Touch Screen WiFi Black',1,5,1,399,10,1,1,'true', null, null, null)
-insert into Products values('Kindle PaperWhite New Model 2015 Black',1,5,1,629,10,1,1,'true', null, null, null)
-insert into Products values('Kindle PaperWhite New Model 2015 White',1,5,1,599,10,1,1,'true', null, null, null)
-insert into Products values('PocketBook Touch HD Black',1,5,1,799,10,1,1,'true', null, null, null)
-insert into Products values('Bookeen Cybook Muse Light 4GB Black',1,5,1,579,10,1,1,'true', null, null, null)
+--select * from Products
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-nokia-230-dual-sim-dark-silver.jpg', null, null, null);
+insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
+insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 GO
 
 ----------------------------------------------------------------------------------
