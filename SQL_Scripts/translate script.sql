@@ -1567,6 +1567,9 @@ go
 truncate table Products
 
 alter table Products
+alter column ProductName nvarchar(60);
+
+alter table Products
 add img text null,
 	img1 text null,
 	img2 text null,
@@ -1583,6 +1586,7 @@ insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 insert into Products values('Telefon Mobil Nokia 230 Dual SIM Dark Silver',1,1,1,229,10,1,1,'true', '~/Images/telefoane_clasice/', null, null, null);
 
+<<<<<<< HEAD
 -- Accesorii
 insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Roz',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---roz.jpg', null, null, null);
 insert into Products values('Bratara Xiaomi Silicon pentru MiBand 2 - Verde',4,3,1,24,10,1,1,'true', '~/Images/accesorii/bratara-xiaomi-silicon-pentru-miband-2---verde.jpg', null, null, null);
@@ -1602,6 +1606,30 @@ insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Wat
 insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Watch 38 mm Negra',4,3,1,36,10,1,1,'true', '~/Images/accesorii/folie-protectie-sticla-securizata-curbata-apple-watch-negra.jpg', null, null, null);
 
 
+=======
+--smartphones
+insert into Products values('Telefon Mobil Apple iPhone 7 32GB Black',1,2,1,2999,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-apple-iphone-7-32gb-black', null, null, null);
+insert into Products values('Telefon Mobil OnePlus 5 A5000 64GB Dual SIM 4G Black',2,2,1,2599,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-oneplus-5-a5000-64gb-dual-sim-4g-black', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy A3(2017) A320 4G Black',3,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-a3-2017-a320-4g-black', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J5(2016) J510 Dual SIM Gold',4,2,1,849,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j510-dual-sim-gold', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy S8 G950F 64GB 4G Black',1,2,1,2989,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s8-g950f-64gb-4g-black', null, null, null);
+insert into Products values('Telefon Mobil Apple iPhone 6 32GB Space Gray',2,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-apple-iphone-6-16gb-space-gray', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Black',3,2,1,349,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Gold',2,2,1,349,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-gold', null, null, null);
+insert into Products values('Telefon Mobil Xiaomi Redmi 4A 32GB Dual Sim 4G Dark Grey',4,2,1,499,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-xiaomi-redmi-4a-16gb-dual-sim-4g-dark-grey', null, null, null);
+insert into Products values('Telefon Mobil Lenovo Moto Z 32GB Dual Sim 4G Black',3,2,1,1659,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-lenovo-moto-z3-32gb-dual-sim-4g-black', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy S8 Plus G955F 64GB 4G Black',2,2,1,3549,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s8-plus-g955f-64gb-4g-black', null, null, null);
+insert into Products values('Telefon Mobil HTC 10 32GB 4G Gold',1,2,1,1799,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-htc-10-32gb-4g-gold', null, null, null);
+insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Gold',3,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-gold', null, null, null);
+insert into Products values('Telefon Mobil Apple iPhone SE 32GB Space Gray',1,2,1,1699,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-apple-iphone-se-16gb-space-gray', null, null, null);
+insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Black',3,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-black', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G White',1,2,1,339,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-white', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black-cpyy-1', null, null);
+insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '~/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
+select * from Products
+select* from Suppliers
+Select * from Categories
+>>>>>>> 952acda0f1edbe860c8c91cbb61a69ac07ad70a5
 GO
 
 ----------------------------------------------------------------------------------
