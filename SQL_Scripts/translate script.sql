@@ -1696,12 +1696,12 @@ go
 alter table Categories
 add img text null;
 go
--- aici bagi categoriile 
-update Categories set CategoryName='Classic',Description='Telefoane cu butoane' where CategoryID=1
-update Categories set CategoryName='Smartphone',Description='Touchscreen' where CategoryID=2
-update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse' where CategoryID=3
-update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi' where CategoryID=4
-update Categories set CategoryName='eBookreader',Description='Bookreader' where CategoryID=5
+-- aici bagi categoriile
+update Categories set CategoryName='Classic',Description='Telefoane cu butoane', img = '~Images/telefoane_clasice.jpg' where CategoryID=1
+update Categories set CategoryName='Smartphone',Description='Touchscreen', img = '~Images/smartphone.jpg' where CategoryID=2
+update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse', img = '~Images/accesorii.png' where CategoryID=3
+update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi', img = '~Images/Gadgeturi.jpg' where CategoryID=4
+update Categories set CategoryName='eBookreader',Description='Bookreader', img = '~Images/eBookreader.jpg' where CategoryID=5
 delete from Categories where CategoryID between 6 and 8
 go
 /*#1. create FOREIGN key */
