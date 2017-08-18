@@ -1715,3 +1715,7 @@ ALTER TABLE [dbo].[Order Details]
 ADD  CONSTRAINT FK_Order_Details_Products FOREIGN KEY(ProductID)
 REFERENCES [dbo].Products (ProductID)
 go
+
+drop table Persons
+go
+create table Persons(Nume varchar(50),Email nvarchar(50),Comentariu text)
