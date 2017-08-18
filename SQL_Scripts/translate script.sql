@@ -1597,7 +1597,7 @@ go
 --eBookReader select * from Products
 insert into Products values('eBook Reader Kindle 6 Glare Touch Screen WiFi Black 140210',1,5,1,339,10,1,1,'true', '/Images/eBook/ebook-reader-kindle-6-glare-touch-screen-wifi-black.jpg', null, null, null);
 insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 Black 111399',2,5,1,629,10,1,1,'true', '/Images/eBook/ebook-reader-kindle-paperwhite-wi-fi-4gb-new-model-2015.jpg', null, null, null);
-insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087',2,5,1,599,10,1,1,'true', '/Images/eBook/eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087', null, null, null);
+insert into Products values('eBook Reader Kindle PaperWhite Wi-Fi 4GB New Model 2015 White 143087',2,5,1,599,10,1,1,'true', '/Images/eBook/ebook-reader-kindle-paperwhite-wifi-white.jpg', null, null, null);
 insert into Products values('eBook Reader PocketBook Touch LUX 3 4GB Red pb626',1,5,1,569,10,1,1,'true', '/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-red.jpg', null, null, null);
 insert into Products values('eBook Reader PocketBook Touch LUX 3 4GB White pb626',2,5,1,569,10,1,1,'true', '/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-white.jpg', '/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-white-3.jpg', null, null);
 insert into Products values('eBook Reader PocketBook Touch LUX 3 4GB Grey pb626',1,5,1,569,10,1,1,'true', '/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-grey.jpg', '/Images/eBook/ebook-reader-pocketbook-touch-lux-3-4gb-grey-2.jpg', null, null);
@@ -1644,35 +1644,35 @@ insert into Products values('Folie Protectie Sticla Securizata Curbata Apple Wat
 
 
 --smartphones
-insert into Products values('Telefon Mobil Apple iPhone 7 32GB Black',1,2,1,2999,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-7-32gb-black', null, null, null);
-insert into Products values('Telefon Mobil OnePlus 5 A5000 64GB Dual SIM 4G Black',2,2,1,2599,10,1,1,'true', '/Images/Smartphone/telefon-mobil-oneplus-5-a5000-64gb-dual-sim-4g-black', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy A3(2017) A320 4G Black',3,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-a3-2017-a320-4g-black', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy J5(2016) J510 Dual SIM Gold',4,2,1,849,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j510-dual-sim-gold', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy S8 G950F 64GB 4G Black',1,2,1,2989,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-s8-g950f-64gb-4g-black', null, null, null);
-insert into Products values('Telefon Mobil Apple iPhone 6 32GB Space Gray',2,2,1,1899,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-6-16gb-space-gray', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Black',3,2,1,349,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Gold',2,2,1,349,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-gold', null, null, null);
-insert into Products values('Telefon Mobil Xiaomi Redmi 4A 32GB Dual Sim 4G Dark Grey',4,2,1,499,10,1,1,'true', '/Images/Smartphone/telefon-mobil-xiaomi-redmi-4a-16gb-dual-sim-4g-dark-grey', null, null, null);
-insert into Products values('Telefon Mobil Lenovo Moto Z 32GB Dual Sim 4G Black',3,2,1,1659,10,1,1,'true', '/Images/Smartphone/telefon-mobil-lenovo-moto-z3-32gb-dual-sim-4g-black', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy S8 Plus G955F 64GB 4G Black',2,2,1,3549,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-s8-plus-g955f-64gb-4g-black', null, null, null);
-insert into Products values('Telefon Mobil HTC 10 32GB 4G Gold',1,2,1,1799,10,1,1,'true', '/Images/Smartphone/telefon-mobil-htc-10-32gb-4g-gold', null, null, null);
-insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Gold',3,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-gold', null, null, null);
-insert into Products values('Telefon Mobil Apple iPhone SE 32GB Space Gray',1,2,1,1699,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-se-16gb-space-gray', null, null, null);
-insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Black',3,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-black', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G White',1,2,1,339,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-white', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black-cpyy-1', null, null);
-insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue', null, null, null);
-insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black', null, null, null);
+insert into Products values('Telefon Mobil Apple iPhone 7 32GB Black',1,2,1,2999,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-7-32gb-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil OnePlus 5 A5000 64GB Dual SIM 4G Black',2,2,1,2599,10,1,1,'true', '/Images/Smartphone/telefon-mobil-oneplus-5-a5000-64gb-dual-sim-4g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy A3(2017) A320 4G Black',3,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-a3-2017-a320-4g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J5(2016) J510 Dual SIM Gold',4,2,1,849,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j510-dual-sim-gold.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy S8 G950F 64GB 4G Black',1,2,1,2989,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-s8-g950f-64gb-4g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Apple iPhone 6 32GB Space Gray',2,2,1,1899,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-6-16gb-space-gray.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Black',3,2,1,349,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G Gold',2,2,1,349,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-gold.jpg', null, null, null);
+insert into Products values('Telefon Mobil Xiaomi Redmi 4A 32GB Dual Sim 4G Dark Grey',4,2,1,499,10,1,1,'true', '/Images/Smartphone/telefon-mobil-xiaomi-redmi-4a-16gb-dual-sim-4g-dark-grey.jpg', null, null, null);
+insert into Products values('Telefon Mobil Lenovo Moto Z 32GB Dual Sim 4G Black',3,2,1,1659,10,1,1,'true', '/Images/Smartphone/telefon-mobil-lenovo-moto-z3-32gb-dual-sim-4g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy S8 Plus G955F 64GB 4G Black',2,2,1,3549,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-s8-plus-g955f-64gb-4g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil HTC 10 32GB 4G Gold',1,2,1,1799,10,1,1,'true', '/Images/Smartphone/telefon-mobil-htc-10-32gb-4g-gold.jpg', null, null, null);
+insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Gold',3,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-gold.jpg', null, null, null);
+insert into Products values('Telefon Mobil Apple iPhone SE 32GB Space Gray',1,2,1,1699,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-se-16gb-space-gray.jpg', null, null, null);
+insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Black',3,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-black.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy J1 Mini Prime J106 Dual Sim 3G White',1,2,1,339,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-white.jpg', '/Images/Smartphone/telefon-mobil-samsung-galaxy-j105-3g-black-cpyy-1.jpg', null, null);
+insert into Products values('Telefon Mobil Huawei P10 Lite 32GB Dual Sim 4G Blue',4,2,1,1199,10,1,1,'true', '/Images/Smartphone/telefon-mobil-huawei-p10-lite-32gb-dual-sim-4g-blue.jpg', null, null, null);
+insert into Products values('Telefon Mobil Samsung Galaxy S6 Edge G925 32GB Black',4,2,1,1899,10,1,1,'true', '/Images/Smartphone/telefon-mobil-samsung-galaxy-s6-edge-g925-32gb-black.jpg', null, null, null);
 insert into Products values('Telefon Mobil Sony Xperia X Compact 32GB 4G Black xcompactblk',4,2,1,1599,10,1,1,'true', '/Images/Smartphone/telefon-mobil-sony-xperia-x-compact-32gb-4g-black.jpg', '/Images/Smartphone/telefon-mobil-sony-xperia-x-compact-32gb-4g-black-1.jpg', null, null);
 insert into Products values('Telefon Mobil LG G5 SE H840 32GB Titanium Grey H840 Grey',4,2,1,1349,10,1,1,'true', '/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey.jpg', '/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey-1.jpg', '/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey-4.jpg', '/Images/Smartphone/telefon-mobil-lg-g5-se-h840-32gb-titanium-grey-5.jpg');
 insert into Products values('Telefon Mobil Apple iPhone 6s 32GB Space Grey iphone 6s 32gb Space Grey',4,2,1,2599,10,1,1,'true', '/Images/Smartphone/telefon-mobil-apple-iphone-6s-32gb-space-grey.jpg', '/Images/Smartphone/telefon-mobil-apple-iphone-6s-32gb-space-grey-1.jpg', null, null);
 
 --gadgeturi
-insert into Products values('Boxa Portabila Emie Cybertron Wireless',1,4,1,749,10,1,1,'true','/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru.jpg','/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru-1.jpg.jpg',null,null)
+insert into Products values('Boxa Portabila Emie Cybertron Wireless',1,4,1,749,10,1,1,'true','/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru.jpg','/Images/Gadgeturi/boxa-portabila-emie-cybertron-wireless-negru-1.jpg',null,null)
 insert into Products values('Ochelari Samsung Gear VR 2 SM-R323 Negru',1,4,1,209,10,1,1,'true','/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru.jpg','/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru-1.jpg','/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru-2.jpg','/Images/Gadgeturi/ochelari-vr-samsung-gear-vr-r323-negru-3.jpg')
 insert into Products values('Manusi cu Casca Bluetooth Hi-Fun M Black',1,4,1,229,10,1,1,'true','/Images/Gadgeturi/manusi-bluetooth-hi-fun-m-black.jpg','/Images/Gadgeturi/manusi-bluetooth-hi-fun-m-black-1.jpg',null,null)
 insert into Products values('Dispozitiv monitorizare somn SenSe Sleep',1,4,1,119,10,1,1,'true','/Images/Gadgeturi/dispozitiv-monitorizare-somn-sense-sleep-peanut.jpg','/Images/Gadgeturi/dispozitiv-monitorizare-somn-sense-sleep-peanut-1.jpg','/Images/Gadgeturi/dispozitiv-monitorizare-somn-sense-sleep-peanut-2.jpg',null)
 insert into Products values('Telecomanda Bluetooth Esperanza',1,4,1,28,10,1,1,'true','/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100.jpg','/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100-3.jpg','/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100-4.jpg','/Images/Gadgeturi/telecomanda-bluetooth-esperanza-pentru-ochelari-3d-vr-emv100-6.jpg')
-insert into Products values('Caciula Stereo Cellularline Music Cap cu Microfon Negru',1,4,1,37,10,1,1,'true', '/Images/telefoane_clasice/caciula-stereo-cellularline-music-cap-cu-microfon-negru.jpg', '/Images/telefoane_clasice/caciula-stereo-cellularline-music-cap-cu-microfon-negru-1.jpg', '/Images/telefoane_clasice/caciula-stereo-cellularline-music-cap-cu-microfon-negru-2.jpg', null);
+insert into Products values('Caciula Stereo Cellularline Music Cap cu Microfon Negru',1,4,1,37,10,1,1,'true', '/Images/Gadgeturi/caciula-stereo-cellularline-music-cap-cu-microfon-negru.jpg', '/Images/Gadgeturi/caciula-stereo-cellularline-music-cap-cu-microfon-negru-1.jpg', '/Images/Gadgeturi/caciula-stereo-cellularline-music-cap-cu-microfon-negru-2.jpg', null);
 insert into Products values('Dispozitiv localizare cu Bluetooth Media-Tech BT Seeker',1,4,1,29,10,1,1,'true', '/Images/Gadgeturi/detector-de-chei-media-tech-bt-seeker-negru.jpg', '/Images/Gadgeturi/detector-de-chei-media-tech-bt-seeker-negru-1.jpg', null, null);
 insert into Products values('Telecomanda Media-Tech Trigger BT pentru VR Matrix PRO Negru',1,4,1,39,10,1,1,'true', '/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru.jpg', '/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru-1.jpg', '/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru-2.jpg', '/Images/Gadgeturi/telecomanda-media-tech-trigger-bt-pentru-vr-matrix-pro-negru-3.jpg');
 insert into Products values('Drona Arcade Orbit',1,4,1,149,10,1,1,'true', '/Images/Gadgeturi/drona-arcade-orbit.jpg', '/Images/Gadgeturi/drona-arcade-orbit-1.jpg', '/Images/Gadgeturi/drona-arcade-orbit-2.jpg', '/Images/Gadgeturi/drona-arcade-orbit-3.jpg');
@@ -1696,11 +1696,11 @@ alter table Categories
 add img text null;
 go
 -- aici bagi categoriile
-update Categories set CategoryName='Classic',Description='Telefoane cu butoane', img = '~Images/telefoane_clasice.jpg' where CategoryID=1
-update Categories set CategoryName='Smartphone',Description='Touchscreen', img = '~Images/smartphone.jpg' where CategoryID=2
-update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse', img = '~Images/accesorii.png' where CategoryID=3
-update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi', img = '~Images/Gadgeturi.jpg' where CategoryID=4
-update Categories set CategoryName='eBookreader',Description='Bookreader', img = '~Images/eBookreader.jpg' where CategoryID=5
+update Categories set CategoryName='Classic',Description='Telefoane cu butoane', img = 'Images/telefoane_clasice.jpg' where CategoryID=1
+update Categories set CategoryName='Smartphone',Description='Touchscreen', img = 'Images/smartphone.jpg' where CategoryID=2
+update Categories set CategoryName='Accesorii',Description='Selfie sticks, Incarcatoare, Casti, Baterii, Huse', img = 'Images/accesorii.png' where CategoryID=3
+update Categories set CategoryName='Gadgeturi',Description='Boxe, Ochelari VR, Telecomenzi', img = 'Images/Gadgeturi.jpg' where CategoryID=4
+update Categories set CategoryName='eBookreader',Description='Bookreader', img = 'Images/eBookreader.jpg' where CategoryID=5
 delete from Categories where CategoryID between 6 and 8
 go
 /*#1. create FOREIGN key */
