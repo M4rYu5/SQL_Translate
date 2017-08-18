@@ -1608,9 +1608,9 @@ insert into Products values('eBook Reader Bookeen Cybook Muse HD 8GB Black',4,5,
 insert into Products values('eBook Reader Bookeen Cybook Muse Light 4GB Black ',3,5,1,579,10,1,1,'true', '/Images/eBook/ebook-reader-bookeen-cybook-muse-light-4gb-black.jpg', '/Images/eBook/ebook-reader-bookeen-cybook-muse-light-4gb-black-3.jpg', null, null);
 
 --tel clasice
-insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',2,1,1,229,10,1,1,'true', '/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null, null);
+insert into Products values('Telefon Mobil CAT B25 Dual SIM Black',2,1,1,229,10,1,1,'true', '/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black.jpg', '/Images/telefoane_clasice/telefon-mobil-cat-b25-dual-sim-black-3.jpg', null, null);
 insert into Products values('Telefon Mobil Nokia 3310 Dual SIM Dark Blue',1,1,1,249,10,1,1,'true','/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue.jpg', '/Images/telefoane_clasice/telefon-mobil-nokia-3310-dual-sim-dark-blue-1.jpg', null, null)
-insert into Products values('Telefon Mobil Alcatel Tiger X3 1016G Black',4,1,1,69,10,1,1,'true','/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-4.jpg', '/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-2.jpg', null, null)
+insert into Products values('Telefon Mobil Alcatel Tiger X3 1016G Black',4,1,1,69,10,1,1,'true','/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-2.jpg', '/Images/telefoane_clasice/telefon-mobil-alcatel-tiger-x3-1016g-black-4.jpg', null, null)
 insert into Products values('Telefon Mobil Nokia 3310 Single Sim Orange',1,1,1,249,10,1,1,'true','/Images/telefoane_clasice/telefon-mobil-nokia-3310-orange.jpg', null, null, null)
 insert into Products values('Telefon Mobil Nokia 130 Dual SIM Red',2,1,1,99,10,1,1,'true', '/Images/telefoane_clasice/telefon-mobil-nokia-130-dual-sim-red.jpg', '/Images/telefoane_clasice/telefon-mobil-nokia-130-dual-sim-red-2.jpg', null, null);
 insert into Products values('Telefon Mobil Alcatel 1054 White',1,1,1,83,10,1,1,'true', '/Images/telefoane_clasice/telefon-mobil-alcatel-1054-white.jpg', null, null, null);
