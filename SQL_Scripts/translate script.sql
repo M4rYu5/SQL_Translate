@@ -1687,9 +1687,6 @@ go
 ----------------------------------------------------------------------------------
 --	Category Changes
 
-select count(*) from Products
-where CategoryID=1
-
 /* Alter table pentu a il putea modifica*/
 
 alter table Categories
