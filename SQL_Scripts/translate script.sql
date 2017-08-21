@@ -1718,4 +1718,4 @@ go
 
 drop table Persons
 go
-create table Persons(Nume varchar(50),Email nvarchar(50),Comentariu text)
+create table Persons(ID int primary key identity(1,1), Nume varchar(50),Email nvarchar(50),Comentariu text)
